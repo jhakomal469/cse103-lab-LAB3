@@ -54,3 +54,4 @@ git pull
 
 ## Learning Note
 Git tracks changes over time. GitHub hosts Git repositories online and makes collaboration and sharing easier.
+Remote edit test completed.
