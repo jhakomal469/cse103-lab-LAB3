@@ -1,0 +1,70 @@
+GIT + GITHUB LAB 3 — COMMAND RECORD
+
+IMPORTANT: Replace the placeholders with your own details. Do not submit invented command output or a fake GitHub URL. Your GitHub repository and successful push/pull must be completed in your own account.
+
+1. Verify Git
+git --version
+Expected: a Git version number (the exact version depends on the installed version).
+
+2. Configure identity (use the name on your college ID and the email linked to GitHub)
+git config --global user.name "YOUR FULL NAME"
+git config --global user.email "YOUR_GITHUB_EMAIL"
+git config --global init.defaultBranch main
+git config --list
+
+3. Create the local repository
+mkdir -p ~/cse103_lab/LAB3/my_first_repo
+cd ~/cse103_lab/LAB3/my_first_repo
+git init
+git status
+
+4. Add the project files
+Copy README.md, main.py, MARKDOWN_GUIDE.md, CHANGELOG.md and .gitignore into this folder.
+git status
+git add .
+git commit -m "Initial commit: add project files"
+git log --oneline
+
+5. Create the GitHub repository in your own account
+Repository name: cse103-lab-LAB3
+Description: Lab work for LAB 3 — GitHub Collaboration & API Interaction
+Visibility: Public
+Do NOT select Add a README, .gitignore, or License.
+Copy the HTTPS URL shown by GitHub.
+
+6. Connect and push (replace URL with your actual repository URL)
+git remote add origin https://github.com/YOUR_USERNAME/cse103-lab-LAB3.git
+git remote -v
+git push -u origin main
+
+For HTTPS authentication, use your GitHub username and a Personal Access Token (PAT) if Git prompts for a password. Never put the token in this report, source files, or a public repository.
+
+7. Make and push a second commit
+git add CHANGELOG.md
+git commit -m "docs: add changelog file"
+git push
+
+8. Simulate a remote edit
+On GitHub, open README.md, use the edit (pencil) option, add one line such as:
+"Remote edit test completed."
+Commit the change on GitHub.
+
+9. Pull the remote change
+git pull
+git status
+git log --oneline
+
+10. Remote workflow summary
+git remote add origin <URL>   — connect local repository to GitHub
+git remote -v                 — list configured remotes
+git push -u origin main       — push and set upstream
+git push                      — push later commits
+git pull                      — fetch and merge remote changes
+git fetch origin              — fetch without merging
+git clone <URL>               — copy a remote repository locally
+
+REPOSITORY URL:
+[Paste your actual GitHub HTTPS URL here]
+
+COMMAND OUTPUT / EVIDENCE:
+[Paste your actual terminal output or add screenshots here]
