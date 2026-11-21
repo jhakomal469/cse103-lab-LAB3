@@ -5,4 +5,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+HEAD
 print("Output from main branch")
+print("Output from feature branch")
+feature-bugfix
